@@ -1,0 +1,284 @@
+﻿<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Jang News</title>
+	<link rel="icon" href="images/jang.png">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<style>
+.myButton {
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background-color:#7892c2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+input{
+
+background-color : #335f64;
+border: 0;
+ border-radius: 0px;
+ color: #FFF;
+ width: 100px;
+ height: 40px;
+font-size: 20px;
+
+}
+div.manu{
+background-color : #4c8f93;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+       </style> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="header">
+		<div class="section">
+		
+		
+		
+		
+			<div class="logo">
+			
+				<a href="index.html">QUETTA</a>
+			</div>
+			<ul>
+				<li class="selected">
+				 <a>aboutus</a>
+				</li>
+				
+				
+				<li class="selected">
+				 <a>contect us</a>
+				</li>
+				
+				
+			
+				
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div class="article">
+	
+			<img src="images/NEWS.jpg" alt="">
+
+			
+			
+
+
+<script>
+
+
+              Date
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+if(dd<10){
+    dd='0'+dd
+} 
+if(mm<10){
+    mm='0'+mm
+} 
+
+var today = dd+'-'+mm+'-'+yyyy;
+document.write("<h1> E-News Downloder<br>Date="+today+"</h1>");
+
+</script>
+
+
+<a  class="myButton" onclick="downloadAll(window.links)">Download all E-pages</a>
+
+	
+	
+		</div>
+	
+			<div class='manu'>	
+
+		<a href="QUETTA.html"><input type="button" value="Quetta"></a>
+	
+		<a href="Rawalpindi.html"><input type="button" value="Rawalpindi"></a>
+		<a href="Lahore.html"><input type="button" value="Lahore"></a>
+		<a href="karachi.html"><input type="button" value="Karachi"></a>
+		<a href="multan.html"><input type="button" value="Multan"></a>
+		</div>
+		
+	</ul></div> <div id='body'><ul>
+	
+	
+
+	
+
+<script>
+var links = [
+  
+  
+];
+
+
+
+
+
+
+
+//               Date
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+if(dd<10){
+    dd='0'+dd
+} 
+if(mm<10){
+    mm='0'+mm
+} 
+
+var today = mm+'-'+dd+'-'+yyyy;
+
+
+//document.getElementById("DATE").value = today;
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+for (var a = 1; a < 21; a++) {
+links[a]="http://e.jang.com.pk/"+today+"/quetta/images/main_page_images/page"+a+".jpg";
+    
+
+
+
+
+document.write('<li><a href='+links[a]+' download><img src=images/jang.jpg height="170" width="210"></a><b>Page ' +a+'</b><br><br><br></li>');
+
+
+ 
+ 
+
+  //alert(links[a]);
+  }
+
+
+
+
+
+//downloader
+
+function downloadAll(urls) {
+  var link = document.createElement('a');
+
+  link.setAttribute('download', null);
+  link.style.display = 'none';
+
+  document.body.appendChild(link);
+
+  for (var i = 0; i < urls.length; i++) {
+    link.setAttribute('href', urls[i]);
+    link.click();
+  }
+  document.body.removeChild(link);
+}
+</script>
+
+
+	
+	
+	
+			
+
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+		
+		</ul>
+		
+	<div id="footer">
+		<div>
+			<div class="connect">
+				<a href="#" id="twitter">twitter</a>
+				<a href="#" id="facebook">facebook</a>
+				<a href="#" id="googleplus">googleplus</a>
+				<a href="#" id="pinterest">pinterest</a>
+			</div>
+			<p>
+				&copy; copyright 2017 | all rights reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
